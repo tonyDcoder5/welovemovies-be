@@ -39,5 +39,13 @@
   "directories": {
     "doc": "docs",
     "test": "test"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyDcoder5/WeLoveMovies-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tonyDcoder5/WeLoveMovies-backend/issues"
+  },
+  "homepage": "https://github.com/tonyDcoder5/WeLoveMovies-backend#readme"
 }
