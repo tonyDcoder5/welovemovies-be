@@ -1,6 +1,8 @@
 const knex = require("../db/connection");
 const reduceProperties = require("../utils/reduce-properties");
 
+
+// helper function that maps the properties of a movie entry and inputs them into a nested object to display within theaters
 const reduceMovies = reduceProperties("theater_id", {
     "movie_id": ["movies", null, "movie_id"],
     "title": ["movies", null, "title"],
@@ -9,6 +11,8 @@ const reduceMovies = reduceProperties("theater_id", {
     "image_url": ["movies", null, "image_url"]
   });
 
+
+// returns list of all theaters in database with all movies that theater is showing 
 function list() {
     return knex("theaters as t")
     .join("movies_theaters as mt", "mt.theater_id", "t.theater_id")

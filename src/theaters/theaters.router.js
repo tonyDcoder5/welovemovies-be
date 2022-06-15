@@ -2,6 +2,7 @@ const router = require("express").Router();
 const controller = require("./theaters.controller");
 const methodNotAllowed = require("../errors/methodNotAllowed");
 
+// GET all theaters API endpoint 
 router.route("/")
 .get(controller.list)
 .all(methodNotAllowed);
