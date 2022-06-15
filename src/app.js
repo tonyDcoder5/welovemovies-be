@@ -9,6 +9,7 @@ const reviewsRouter = require("./reviews/reviews.router");
 const notFound = require("./errors/notFound");
 const errorHandler = require("./errors/errorHandler");
 
+// include cors for all routes
 app.use(cors());
 app.use(express.json());
 
