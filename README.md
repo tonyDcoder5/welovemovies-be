@@ -1,14 +1,15 @@
-#WeLoveMovies Backend Application
-##This is the Back End API for the WeLoveMovies project. 
+# WeLoveMovies Backend Application#
 
-###Installation
-Fork / clone this repository.
-Run npm install.
-Use npm start to run the application. If you deploy this application, create a .env.production file similar to the .env.development file.
+## This is the Back End API for the WeLoveMovies project
 
-###API ENDPOINTS/Routes
+### Installation  
+
+Fork / clone this repository.   
+Run npm install.   
+Use npm start to run the application. If you deploy this application, create a .env.production file similar to the .env.development file.   
+
+### API ENDPOINTS/Routes  
 Using a database GUI like Postman, the following routes retrieve information from an ElephantSQL database I was tasked with setting up:
-
 - GET /movies [returns all movies store in database]
   - /movies/:movieId 
     - GET /movies/:movieId [returns individual movie entry]
@@ -21,6 +22,6 @@ Using a database GUI like Postman, the following routes retrieve information fro
   - DELETE /reviews/:reviewId [deletes an existing review record from database]
   
 TODO: 
-- connect front end and deploy fullstack application 
-- add full CRUD operations for theaters and reviews 
+- add full CRUD operations for theaters, movies, and reviews 
 - update UI to personal taste 
+- link to realtime API data for current movies and local theaters
