@@ -1,4 +1,4 @@
-# WeLoveMovies Backend Application#
+# WeLoveMovies Backend Application
 
 ## This is the Back End API for the WeLoveMovies project
 
